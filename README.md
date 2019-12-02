@@ -47,3 +47,56 @@ num=int(input("enter a number : ")) power=int(input("enter the power : ")) num2=
 #12). program to print if a number is prime or not
 
 num=int(input("enter a number : ")) n=2 k=0 while(n<num): if(num%n==0):k=1 n+=1 if(k==0):print(" PRIME ") else:print(" NOT PRIME ")
+'''y=[]
+for x in range(2000,3201):
+    if(x%7==0 and x%5!=0):
+        y.append(x)
+    print(x) 
+#2    
+    fac=1 
+    x=int(input("enter number :"))
+    for i in range(1,x+1):
+        fac=fac*i 
+        print("factorial is : ",fac)
+        #3
+    n=int(input("enter number :")) 
+    dic={}
+    for i in range(1,n+1):
+        dic[i]=i*i 
+        print(dic) 
+        #4
+    x=input("enter the comma seperated sequence")
+    y=x.split(',')
+    print(y) 
+#5
+x=input("enter the seq")
+y=x.split(",")
+c=50
+h=30 
+q=[]
+for i in y:
+    j=int(i)
+    q.apend(2*c*j/h)
+print(q)'''
+ 
+ #6 
+rw=int(input("enter  row"))
+cl=int(input("enter columns"))
+q=[]
+p=[]
+for i in range(1,rw+1):
+    p.clear
+for j in range(1,cl+1):
+    p.append(i*j)
+    q.append(p.copy())
+    print(q)
+'''#9 
+print("enter no") 
+c=[]
+while true: 
+    try:
+        line=input()
+        except eof error: 
+            break
+        c.append(line.upper())
+        print(c)'''
