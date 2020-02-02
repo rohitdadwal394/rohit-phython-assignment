@@ -100,3 +100,202 @@ while true:
             break
         c.append(line.upper())
         print(c)'''
+Q1.
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf(" Enter a Number  :  ");
+    scanf("%d",&n);
+    if((n%2)!=0)
+      printf(" Wierd ");
+      else
+        {
+          if((n>=2)&&(n<=5))
+            printf(" Not Weird ");
+            else
+              if((n>=6)&&(n<=20))
+                printf(" Weird ");
+                  else
+                    if(n>20)
+                      printf(" Not weird");
+        }
+    return 0;
+}
+Q2.
+#include <stdio.h>
+int main()
+{
+    int n,m;
+    printf(" Enter a Number  :  ");
+    scanf("%d",&n);
+    printf(" Enter a Number  :  ");
+    scanf("%d",&m);
+    if(n>m)
+       printf("Greater number is  :  %d",n);
+       else
+         printf("Greater number is  :  %d",m);
+    return 0;
+}
+Q3.
+#include <stdio.h>
+int main()
+{
+    int n,m,b;
+    printf(" Enter first Number  :  ");
+    scanf("%d",&n);
+    printf(" Enter second Number  :  ");
+    scanf("%d",&m);
+    printf(" Enter third Number  :  ");
+    scanf("%d",&b);
+    if(n>m&&n>b)
+       printf("Greater number is  :  %d",n);
+         else
+           if(m>n&&m>b)
+              printf("Greater number is  :  %d",m);
+                else
+                  printf("Greater number is  :  %d",b);
+    return 0;
+}
+Q4.
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf(" Enter a Number  :  ");
+    scanf("%d",&n);
+    if(n>0)
+       printf("Positive number ");
+         else
+           if(n<0)
+            printf("Negative number ");
+              else
+                if(n==0)
+                 printf("Number is Zero ");
+    return 0;
+}
+Q5.
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf(" Enter a Number  :  ");
+    scanf("%d",&n);
+    if((n%5==0)&&(n%11==0))
+       printf(" Divisible by 5 and 11");
+         else
+            printf(" Not divisible by 5 and 11");
+    return 0;
+}
+Q6.
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf(" Enter a Number  :  ");
+    scanf("%d",&n);
+    if(n%2==0)
+       printf(" Even Number");
+         else
+            printf(" Odd Number");
+    return 0;
+}
+Q7.
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf(" Enter year  :  ");
+    scanf("%d",&n);
+    if(n%4==0)
+       printf(" Leap year");
+         else
+            printf(" Not Leap year");
+    return 0;
+}
+Q8.
+#include <stdio.h>
+int main()
+{
+    char n;
+    printf(" Enter a character (alphabet,number or operator)  :  ");
+    scanf("%c",&n);
+    if(((n>=97)&&(n<=122))||((n>=65)&&(n<=90)))
+       printf(" Character Is An Alphabet");
+         else
+           printf(" Character Is Not An Alphabet");
+    return 0;
+}
+Q9.
+#include <stdio.h>
+int main()
+{
+    char n;
+    printf(" Enter an alphabet  :  ");
+    scanf("%c",&n);
+    if((n=='a')||(n=='e')||(n=='i')||(n=='o')||(n=='u')||(n=='A')||(n=='E')||(n=='I')||(n=='O')||(n=='U'))
+       printf(" Alphabet is a vowel ");
+         else
+           printf(" Alphabet is a consonent ");
+    return 0;
+}
+Q10.
+#include <stdio.h>
+#include<ctype.h>
+int main()
+{
+    char n;
+    printf(" Enter a character (alphabet,number or operator)  :  ");
+    scanf("%c",&n);
+    if(isalpha(n))
+       printf(" Character is an Alphabet");
+         else
+           if(isdigit(n))
+             printf(" Character is a digit");
+               else
+                 printf(" Character is a special character");
+    return 0;
+}
+Q11.
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char n;
+    printf(" Enter an alphabet  :  ");
+    scanf("%c",&n);
+    if(isupper(n))
+       printf(" Uppercase alphabet");
+         else
+           if(islower(n))
+             printf(" lowercase alphabet");
+    return 0;
+}
+Q12.
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    int n;
+    printf(" Enter Week number (1-7)  :  ");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1: printf("Monday");
+                break;
+        case 2: printf("Tuesday");
+                break;
+        case 3: printf("Wednesday");
+                break;
+        case 4: printf("Thursday");
+                break;
+        case 5: printf("Friday");
+                break;
+        case 6: printf("Saturday");
+                break;
+        case 7: printf("Sunday");
+                break;
+        default: printf("!!**Invalid input**!!");
+    }
+    return 0;
+}
